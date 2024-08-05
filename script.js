@@ -78,6 +78,7 @@ bubbleSort([34,51,1,2,3,45,56,687])
 
 //Binary search tree
 
+//matryca węzła
 class Node {
     constructor(value) {
         this.value = value;
@@ -86,8 +87,52 @@ class Node {
     }
 }
 
+//matryca drzewa
 class BST {
     constructor() {
         this.root = null;
     }
-}
+
+//dodawanie węzła
+    insert(value) {
+        let newNode = new Node(value);
+        if(this.root === null) {
+            this.root = newNode;
+            console.log(this)
+            return this;
+        }
+
+        let current = this.root;
+
+        while(true) {
+            if(value === current.value) return undefined;
+            if(value<current.value) {
+                if(current.left === null) {
+                    current.left = newNode;
+                    return this
+                } 
+                current = current.left;
+            } else {
+                    if(current.right === null) {
+                        current.right = newNode;
+                        return this
+                    }
+                current = current.right;
+                }
+            }
+        }
+    }
+
+    let tree = new BST();
+    tree.insert(6)
+    tree.insert(34)
+    tree.insert(11)
+    tree.insert(2)
+    tree.insert(3)
+    tree.insert(2)
+    tree.insert(8)
+    tree.insert(81)
+
+    console.log(tree)
+    
+
