@@ -48,6 +48,7 @@ function binarySearch(arr,val) {
 }
 
 binarySearch([1,3,5,8,11,23,56,687,1234,3234,5657,34561], 56)
+binarySearch([1,3,5,8,11,23,56,687,1234,3234,5657,34561], 0)
 
 //Bubble sort
 function bubbleSort(arr) {
