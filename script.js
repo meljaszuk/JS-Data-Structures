@@ -16,7 +16,7 @@ function linearSearch(arr, val) {
 linearSearch([34,51,1,2,3,45,56,687], 100)
 linearSearch([34,51,1,2,3,45,56,687], 56)
 
-//Binary search
+/* //Binary search
 function binarySearch(arr,val) {
     console.log('BINARY SEARCH')
     console.log(arr,val)
@@ -39,7 +39,7 @@ function binarySearch(arr,val) {
     }
 
 }
-
+ */
 binarySearch([1,3,5,8,11,23,56,687,1234,3234,5657,34561], 56)
 
 //Bubble sort
