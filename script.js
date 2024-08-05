@@ -16,6 +16,32 @@ function linearSearch(arr, val) {
 linearSearch([34,51,1,2,3,45,56,687], 100)
 linearSearch([34,51,1,2,3,45,56,687], 56)
 
+//Binary search
+function binarySearch(arr,val) {
+    console.log('BINARY SEARCH')
+    console.log(arr,val)
+
+    let searchedIndex;
+    let minIndex = 0;
+    let maxIndex = arr.length - 1;
+    let divideIndex = Math.floor(arr.length / 2)
+
+    while (searchedIndex === undefined) {
+        if (arr[divideIndex] > val) {
+            maxIndex = divideIndex
+            divideIndex = Math.floor(maxIndex / 2);
+        } else
+
+        if (arr[divideIndex] < val) {
+            minIndex = divideIndex;
+            divideIndex = Math
+        }
+    }
+
+}
+
+binarySearch([1,3,5,8,11,23,56,687,1234,3234,5657,34561], 56)
+
 //Bubble sort
 function bubbleSort(arr) {
     console.log('BUBBLE SORT')
@@ -41,3 +67,4 @@ function bubbleSort(arr) {
 }
 
 bubbleSort([34,51,1,2,3,45,56,687])
+
