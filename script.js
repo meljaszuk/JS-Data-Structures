@@ -76,3 +76,12 @@ function bubbleSort(arr) {
 
 bubbleSort([34,51,1,2,3,45,56,687])
 
+//Binary search tree
+
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
